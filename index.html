@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BMW X6</title>
-  <link rel="preconnect"
-    href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.min.css">
 
   <script defer src="js/accordion.js"></script>
-
+  <script defer src="js/smoothScroll.js"></script>
+  <script defer src="js/tabs.js"></script>
 </head>
+
 <body>
   <!-- header (start) -->
   <header class="header">
@@ -22,34 +22,28 @@
       <div class="header-wrapper">
         <div class="header-main">
           <a href="#" class="logo header__logo">
-            <img src="img/logo.svg"
-              alt="Logo: BMW X6"
-              class="logo__img">
+            <img src="img/logo.svg" alt="Logo: BMW X6" class="logo__img">
           </a>
           <!-- /.logo -->
           <nav class="menu">
             <ul class="menu-list">
               <li class="menu-list__item">
-                <a href="#design"
-                  class="menu-list__link">
+                <a href="#design" class="menu-list__link">
                   Дизайн
                 </a>
               </li>
               <li class="menu-list__item">
-                <a href="#feature"
-                  class="menu-list__link">
+                <a href="#feature" class="menu-list__link">
                   Характеристики
                 </a>
               </li>
               <li class="menu-list__item">
-                <a href="#"
-                  class="menu-list__link">
+                <a href="#" class="menu-list__link">
                   Дилерская сеть
                 </a>
               </li>
               <li class="menu-list__item">
-                <a href="#contacts"
-                  class="menu-list__link">
+                <a href="#contacts" class="menu-list__link">
                   Тест-драйв
                 </a>
               </li>
@@ -76,20 +70,20 @@
         <div class="offer">
           <h1 class="main__title">BMW X6</h1>
           <p class="main__descr">Поражающий внешний облик
-          и&nbsp;впечатляющая функциональность</p>
+            и&nbsp;впечатляющая функциональность</p>
           <a href="#contacts" type="button" class="button main__button">
             Тест-драйв
           </a>
           <a href="#design" class="main__scroll" aria-label="к следующему экрану"></a>
-          
+
         </div>
         <!-- /.offer -->
         <div class="main-img">
           <a href="https://youtu.be/dkrFZSWyklU" class="play">
-            
+
             Смотреть видео
           </a>
-          
+
         </div>
       </div>
       <!-- /.main-wrapper -->
@@ -103,17 +97,19 @@
       <div class="design-wrapper">
         <div class="design-block">
           <img src="img/car/image-5.png" alt="BMW X6" class="feature__img design-block__img" data-tabs-field="interior">
-          <img src="img/car/image-4.png" alt="BMW X6" class="feature__img design-block__img hidden" data-tabs-field="body">
+          <img src="img/car/image-4.png" alt="BMW X6" class="feature__img design-block__img hidden"
+            data-tabs-field="body">
           <div class="design-text">
-            <h2 class="section__title design__title">
+            <h2 class="section__title design__title" data-tabs-field="interior">
               Комфорт в деталях
             </h2>
-            <h2 class="section__title design__title hidden">
+            <h2 class="section__title design__title hidden" data-tabs-field="body">
               Притягивает взгляды
             </h2>
             <ul class="design-list">
               <li>
-                <button type="button" class="design-list__item design-list__item_active" data-tabs-handler="interior">Дизайн салона</button>
+                <button type="button" class="design-list__item design-list__item_active"
+                  data-tabs-handler="interior">Дизайн салона</button>
               </li>
               <li>
                 <button type="button" class="design-list__item" data-tabs-handler="body">Дизайн кузова</button>
@@ -123,9 +119,11 @@
             <ul>
               <li class="design__descr" data-tabs-field="interior">
                 <p class="design__description-text">
-                  Контурная подсветка в передних и задних дверях создает в салоне автомобиля уютную и расслабляющую обстановку.
+                  Контурная подсветка в передних и задних дверях создает в салоне автомобиля уютную и расслабляющую
+                  обстановку.
                   Хрустальные детали встроены в рукоятку рычага селектора, регулятор громкости.
-                  Панорамная стеклянная крыша дарит ощущение невероятного простора днем, а в ночное время создает в салоне особую атмосферу.
+                  Панорамная стеклянная крыша дарит ощущение невероятного простора днем, а в ночное время создает в
+                  салоне особую атмосферу.
                 </p>
                 <button class="more">
                   — Узнать больше
@@ -133,12 +131,16 @@
               </li>
               <li class="design__descr hidden" data-tabs-field="body">
                 <p class="design__description-text">
-                  Широкий. Динамичный. Мускулистый. Обновлённый BMW X6 сочетает в себе солиддность серии X со спортивным купе. Решительная передняя часть с широкими воздухозаборниками недвусмысленно намекает на то, какая мощь скрыта под капотом. Большая двойная решётка радиатора спортивной формы подччёркивает атлетичность автомобиля. Усиливают впечатление фирменные двойные фары BMW и широко раставленные противотуманные фары.
+                  Широкий. Динамичный. Мускулистый. Обновлённый BMW X6 сочетает в себе солиддность серии X со спортивным
+                  купе. Решительная передняя часть с широкими воздухозаборниками недвусмысленно намекает на то, какая
+                  мощь скрыта под капотом. Большая двойная решётка радиатора спортивной формы подччёркивает атлетичность
+                  автомобиля. Усиливают впечатление фирменные двойные фары BMW и широко раставленные противотуманные
+                  фары.
                 </p>
                 <button class="more">
                   — Узнать больше
                 </button>
-            </li>
+              </li>
             </ul>
           </div>
           <!-- /.design-text -->
@@ -146,16 +148,16 @@
         <!-- /.design-block -->
         <ul>
           <li class="design-images" data-tabs-field="interior">
-              <img src="img/design/interior01.jpg" alt="BMW X6" class="design__img">
-              <img src="img/design/interior02.jpg" alt="BMW X6" class="design__img">
-              <img src="img/design/interior03.jpg" alt="BMW X6" class="design__img">
-              <img src="img/design/interior04.jpg" alt="BMW X6" class="design__img">
+            <img src="img/design/interior01.jpg" alt="BMW X6" class="design__img">
+            <img src="img/design/interior02.jpg" alt="BMW X6" class="design__img">
+            <img src="img/design/interior03.jpg" alt="BMW X6" class="design__img">
+            <img src="img/design/interior04.jpg" alt="BMW X6" class="design__img">
           </li>
           <li class="design-images hidden" data-tabs-field="body">
-              <img src="img/design/body01.jpg" alt="BMW X6" class="design__img">
-              <img src="img/design/body02.jpg" alt="BMW X6" class="design__img">
-              <img src="img/design/body03.jpg" alt="BMW X6" class="design__img">
-              <img src="img/design/body04.jpg" alt="BMW X6" class="design__img">
+            <img src="img/design/body01.jpg" alt="BMW X6" class="design__img">
+            <img src="img/design/body02.jpg" alt="BMW X6" class="design__img">
+            <img src="img/design/body03.jpg" alt="BMW X6" class="design__img">
+            <img src="img/design/body04.jpg" alt="BMW X6" class="design__img">
           </li>
         </ul>
       </div>
@@ -256,7 +258,7 @@
                     Крутящий момент двигателя
                   </span>
                   <span class="feature-sub__value">
-                    650 Н·м	
+                    650 Н·м
                   </span>
                 </li>
                 <li class="feature-sub__item">
@@ -439,4 +441,5 @@
   </div>
   <!-- modal (end) -->
 </body>
+
 </html>
