@@ -14,6 +14,5 @@ const closeMenu = () => {
 humburgerElem.addEventListener('click', toggleMenu);
 document.body.addEventListener('click', (event) =>{
     const target = event.target;
-    console.log('target: ', target.closest('.menu'));
     if (!target.classList.contains('humburger-menu') & !target.closest('.menu')) closeMenu();
 });
